@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Edit Profile  |  MyLMS</title>
+
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #f0f0f0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 25px;
+                text-align: center;
+                color: black;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            form {
+                width: 400px;
+                padding: 50px;
+                border-radius: 50px;
+                background: rgba(255,255,255,0.1);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                border: 2px solid #d0e7ff;
+            }
+
+            .groupform {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+
+            .groupform label {
+                width: 120px;
+                margin-right: 10px;
+                text-align: right;
+            }
+
+            .groupform input {
+                flex: 1;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 15px;
+                border: none;
+                border-radius: 10px;
+                background-color: lightgray;
+                cursor: pointer;
+                display: block;
+                margin: 20px auto 0;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Edit Your Profile</h2>
+
+        <form>
+            <div class="groupform">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" value="Student Name"><br>
+            </div>
+            
+            <div class="groupform">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="student@gmail.com"><br>
+            </div>
+
+            <div class="groupform">
+                <label for="password">Old Password</label>
+                <input type="password" id="password-old"><br>
+            </div>
+            
+            <div class="groupform">
+                <label for="password">New Password</label>
+                <input type="password" id="password-new"><br>
+            </div>
+            
+            <button type="submit">Save Changes</button>
+        </form>
+
+        <footer>
+            <a href="dashboard.html">Back To Dashboard</a>
+        </footer>
+    </body>
+
+</html>
